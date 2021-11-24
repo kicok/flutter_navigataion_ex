@@ -32,12 +32,34 @@ class TransportationScreen extends StatefulWidget {
 class _TransportationScreenState extends State<TransportationScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Navigation Demo'),
-      ),
-      body: const Center(
-        child: Text('Transportaion'),
+    // DefaultTabController로 Scaffold를 감싸준다.
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Navigation Demo'),
+          bottom: const TabBar(
+            tabs: [
+              Tab(
+                icon: Icon(Icons.directions_car),
+                text: 'Car',
+              ),
+              Tab(
+                icon: Icon(Icons.directions_transit),
+                text: 'Train',
+              ),
+              Tab(
+                icon: Icon(Icons.directions_bike),
+                text: 'Bike',
+              ),
+            ],
+          ),
+        ),
+        body: const TabBarView(children: [
+          Text('Car'),
+          Text('Train'),
+          Text('Bike'),
+        ]),
       ),
     );
   }
