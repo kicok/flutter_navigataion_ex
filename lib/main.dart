@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_navigation_ex/bike/bike.dart';
+import 'package:flutter_navigation_ex/car/car.dart';
+import 'package:flutter_navigation_ex/train/train.dart';
 
 void main() {
   runApp(const MyApp());
@@ -56,9 +59,9 @@ class _TransportationScreenState extends State<TransportationScreen> {
           ),
         ),
         body: const TabBarView(children: [
-          Text('Car'),
-          Text('Train'),
-          Text('Bike'),
+          Car(),
+          Train(),
+          Bike(),
         ]),
       ),
     );
