@@ -40,6 +40,8 @@ class _CarState extends State<Car> {
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
+        backgroundColor: Colors.amber[100], // backgroundColor 실행됨 (tab 4개미만)
+        //각각의 BottomNavigationBarItem 내에세는 backgroundColor 가 실행되지 않음
       ),
     );
   }

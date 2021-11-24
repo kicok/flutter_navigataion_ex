@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Navigation Demo',
       theme: ThemeData(
         primarySwatch: Colors.purple,
-        // colorScheme: ColorScheme.fromSwatch().copyWith(
-        //   secondary: Colors.teal,
-        // ),
+        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.grey),
       ),
       home: const TransportationScreen(),
     );
