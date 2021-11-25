@@ -52,7 +52,7 @@
     - BottomNavigationBarType.fixed (tab의 개수가 4개 미만일 때의 default)
     - BottomNavigationBarType.shifting (tab의 개수가 4개 이상일 때의 default)
 
-      ```
+      ```dart
        // tab의 개수가 4개 이상일 때는 defaul로 BottomNavigationBarType.shifting가
        // 적용되므로 selectedItemColor, unselectedItemColor 를 사용해야 tab을 눈으로 볼수 있음
        selectedItemColor: Theme.of(context).primaryColor,
