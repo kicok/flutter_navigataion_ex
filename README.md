@@ -62,10 +62,6 @@
        // 그러므로 각 BottomNavigationBarItem 에 별도로 backgroundColor를 지정해야함
       ```
 
-      ```
-
-      ```
-
   - Manual State management
     - currentIndex property: 현재 선택된 tab의 인덱스
     - onTap method: 이 method를 이용해서 currentIndex 업데이트
