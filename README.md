@@ -52,6 +52,20 @@
     - BottomNavigationBarType.fixed (tab의 개수가 4개 미만일 때의 default)
     - BottomNavigationBarType.shifting (tab의 개수가 4개 이상일 때의 default)
 
+      ```
+       // tab의 개수가 4개 이상일 때는 defaul로 BottomNavigationBarType.shifting가
+       // 적용되므로 selectedItemColor, unselectedItemColor 를 사용해야 tab을 눈으로 볼수 있음
+       selectedItemColor: Theme.of(context).primaryColor,
+       unselectedItemColor: Theme.of(context).colorScheme.secondary,
+       backgroundColor: Colors.amber[100],
+       // backgroundColor 실행되지 않음 (tab 4개이상)
+       // 그러므로 각 BottomNavigationBarItem 에 별도로 backgroundColor를 지정해야함
+      ```
+
+      ```
+
+      ```
+
   - Manual State management
     - currentIndex property: 현재 선택된 tab의 인덱스
     - onTap method: 이 method를 이용해서 currentIndex 업데이트
